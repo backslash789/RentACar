@@ -1,0 +1,459 @@
+/* General */
+
+h1 {
+  font-style: oblique;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 56px;
+  /* font-size:4em; */
+  color: whitesmoke;
+}
+
+img[id=backpic] {
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+
+/* 下拉式目錄 */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtnup {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtnup {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+#menulist {
+  top: 30px;
+  position: fixed;
+  font-size: 32px;
+  font-family: 'Lora';
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+
+
+
+/* 首頁Homepage */
+
+
+#htmlhomepage,
+#bodyhomepage {
+  height: 100%;
+  /* margin: 0; */
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  position: relative;
+
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../CSS/pic/cc.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../CSS/pic/bz4x.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../CSS/pic/alphard.jpg");
+  min-height: 400px;
+}
+
+.graybkg {
+  position: relative;
+  /* color: #ddd; */
+  background-color: #282E34;
+  /* text-align: center; */
+  padding: 50px 80px;
+  text-align: center;
+}
+
+
+.caption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.mytext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.mytext2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: red; */
+
+}
+
+
+
+h3 {
+  color: white;
+  font-size: 42px;
+  /* font-size:4em; */
+  text-align: center;
+}
+
+#video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.myfooter {
+  text-align: center;
+  font-size: 18px;
+  /* font-size:2em; */
+  color: white;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+/* About關於我 */
+#bodyabout {
+  /* position: relative; */
+  background-image: url(../CSS/pexels-pixabay-248747.jpg);
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../CSS/pexels-pixabay-248747.jpg); */
+  background-size: cover;
+  /* 充滿螢幕 */
+  background-repeat: no-repeat;
+  background-position: -750px;
+}
+
+
+#carouselExampleCaptions {
+  width: 70%;
+  /* z-index:-1 ; */
+}
+
+#carouselExampleCaptions img {
+  width: 100%;
+  /* height: 600px; */
+
+}
+
+
+p,
+.h2 {
+  color: white;
+  font-size: 36px;
+  /* font-size:2em; */
+}
+
+h5,
+.carousel-item p {
+  font-size: 42px;
+
+}
+
+
+
+
+/* 車款一覽List */
+#bodylist {
+  background-image: url(../CSS/pexels-pixabay-63294.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+h4 {
+  font-size: 36px;
+  font-family: Comic Sans MS;
+  /* display: inline; */
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+/* 滑鼠移動到圖上放大 */
+/* #mypic {
+  transform: scale(1, 1);
+  transition: all 0.5s ease-out;
+}
+
+#mypic :hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+  
+} */
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 40px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  /* background-color: red; */
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* The navigation menu links */
+.sidenav .formcheck {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .formcheck:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtnside {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+
+
+.formcheck {
+  /* background-color: black; */
+  font-size: 20px;
+  position: fixed;
+  left: 0px;
+  bottom: 45%;
+  /* border-radius: 20%; */
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#sidebar {
+  /* background-color: black; */
+  font-size: 30px;
+  position: fixed;
+  left: 0px;
+  top: 12%;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#sidebar:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/* Image Overlay Title */
+/* * {box-sizing: border-box} */
+
+/* Container needed to position the overlay. Adjust the width as needed */
+
+/* .container2 {
+  position: relative;
+  width: 50%;
+  max-width: 390px;
+} */
+
+/* Make the image to responsive */
+/* .image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+/* The overlay effect - lays on top of the container and over the image */
+/* .overlay2 {
+  position: absolute;
+  bottom: 30.5%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 92.5%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+  font-family: Comic Sans MS;
+} */
+
+/* When you mouse over the container, fade in the overlay title */
+/* .container2:hover .overlay2 {
+  opacity: 1;
+} */
+
+
+
+
+
+
+
+
+
+/* -預約專區Order- */
+#bodyorder {
+  background-image: url(../CSS/pexels-torsten-dettlaff-70912.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Comic Sans MS;
+  /* display: inline; */
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+#orderframe {
+
+  width: 70%;
+  border: 10px red;
+  /* background-color: gray; */
+  padding: 0 5%;
+  margin: 0 auto;
+  color: whitesmoke;
+  font-size: 24px;
+
+}

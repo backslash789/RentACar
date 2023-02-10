@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="icon" type="image/x-icon" href="../CSS/pic/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+   
+    <link rel="stylesheet" href="../CSS/allcss.css">
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+
+
+
+</head>
+
+<body id="bodyorder">
+
+    <h1>聯絡我們</h1>
+    <h2>請填妥資以下租車資訊，收到資料後預計兩個工作天會電話聯繫確認，感謝您!</h2>
+    <div id="orderframe">
+
+        <form>
+            <div class="form-group row">
+                <label for="myname" class="col-3 col-form-label">姓名 :</label>
+                <div class="col-9">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-address-book-o"></i>
+                            </div>
+                        </div>
+                        <input id="myname" name="myname" placeholder="王小明" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="myphone" class="col-3 col-form-label">連絡電話 :</label>
+                <div class="col-9">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <input id="myphone" name="myphone" placeholder="0987654321(請採用相同格式輸入)" type="tel"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="myemail" class="col-3 col-form-label">電子郵件信箱 :</label>
+                <div class="col-9">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                        </div>
+                        <input id="myemail" name="myemail" placeholder="example@gmail.com(僅接受Gmail信箱)" type="email"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="myselect" class="col-3 col-form-label">選擇車款 : </label>
+                <div class="col-9">
+                    <select style="font-size : 18px;" id="myselect" name="myselect" class="custom-select">
+                        <optgroup label="Sedan 轎車">
+                            <option value="Camry">Camry</option>
+                            <!-- <option value = '{"price":2000,"car":"Camry"}'>Camry</option> -->
+                            <option value="Corolla Altis">Corolla Altis</option>
+                            <option value="Yaris">Yaris</option>
+                        </optgroup>
+
+                        <optgroup label="SUV 運動休旅車">
+                            <option value="RAV4">RAV4</option>
+                            <option value="Corolla Cross">Corolla Cross</option>
+                            <option value="bz4x">bz4x</option>
+                        </optgroup>
+
+                        <optgroup label="MPV 多功能休旅車">
+                            <option value="Sienna">Sienna</option>
+                            <option value="Alphard">Alphard</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="location" class="col-3 col-form-label">取車地點 : </label>
+                <div class="col-9">
+                    <select style="font-size : 18px;" id="location" name="location" class="custom-select">
+                        <optgroup label="北區">
+                            <option value="台北">台北</option>
+                            <option value="桃園">桃園</option>
+                        </optgroup>
+
+                        <optgroup label="中區">
+                            <option value="台中">台中</option>
+                            <option value="南投">南投</option>
+                        </optgroup>
+
+                        <optgroup label="南區">
+                            <option value="台南">台南</option>
+                            <option value="高雄">高雄</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="starttime" class="col-3 col-form-label">預約開始時間 :</label>
+                <div class="col-9">
+                    <input type="datetime-local" id="starttime" name="starttime">
+                    <!-- <input
+                        type="datetime-local"
+                        id="meeting-time"
+                        name="meeting-time"
+                        value="2018-06-12T19:30"
+                        min="2018-06-07T00:00"
+                        max="2018-06-14T00:00"> -->
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="endtime" class="col-3 col-form-label">預約結束時間 :</label>
+                <div class="col-9">
+                    <input type="datetime-local" id="endtime" name="endtime">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="mytextarea" class="col-3 col-form-label">留言區 :</label>
+                <div class="col-9">
+                    <textarea id="mytextarea" placeholder="請留下您的意見" name="mytextarea" cols="40" rows="5"
+                        class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-3 col-9">
+                    <button onclick="result()" name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <a href="./hompage.html"><img id="backpic" src="../CSS/logo.png"></a>
+    </div>
+
+
+    <div id="menulist" onclick="openNavup()">&#9776;MENU</div>
+    <!-- 下拉式目錄 -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtnup" onclick="closeNavup()">&times;</a>
+        <div class="overlay-content">
+            <a href="../HTML/hompage.html">首頁</a>
+            <a href="../HTML/about.html">關於我們</a>
+            <a href="../HTML/list.html">車款一覽(豐田)</a>
+            <a href="../HTML/order.html">預約專區</a>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script>
+        $(document).ready(function () {
+            $("#starttime").prop("min", function () {
+                // let d = new Date(2022, 0, 2);
+                let d = new Date();
+                var yy = d.getFullYear();
+                var mm = (d.getMonth() + 1).toString().padStart(2, "0");
+                // console.log(typeof mm);
+                var dd = d.getDate().toString().padStart(2, "0");
+                // console.log(d.getDay());    
+                var hh = d.getHours().toString().padStart(2, "0");
+                var mmm = d.getMinutes().toString().padStart(2, "0");
+                // console.log(`${yy}-${mm}-${dd}T${hh}:${mmm}`);
+                return (`${yy}-${mm}-${dd}T${hh}:${mmm}`);
+            })
+            document.getElementById("starttime").addEventListener("change", function () {
+                var input = this.value;
+                $("#endtime").prop("min", input);
+            });
+
+            $("#myselect").change(function () {
+                // alert($(this).find(':selected').data('car'));
+                var selectedcar = ($(this).find(':selected').data('car'));
+                // alert($(this).find(':selected').data('price'));
+                var selectedprice = ($(this).find(':selected').data('price'));
+            });
+
+
+
+
+        });
+
+
+    </script>
+    <script src="../JS/alljs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="icon" type="image/x-icon" href="../CSS/pic/favicon.ico" />
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/allcss.css">
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#all").on("click", function () {
+                console.log("all");
+                $(".sedan").removeProp("style");
+                $(".suv").removeProp("style");
+                $(".mpv").removeProp("style");
+            })
+            $("#sedan").on("click", function () {
+                console.log("sedan");
+                $(".sedan").removeProp("style");
+                $(".suv").css("display", "none");
+                $(".mpv").css("display", "none");
+            })
+            $("#suv").on("click", function () {
+                console.log("suv");
+                $(".sedan").css("display", "none");
+                $(".suv").removeProp("style");
+                $(".mpv").css("display", "none");
+            })
+            $("#mpv").on("click", function () {
+                console.log("mpv");
+                $(".sedan").css("display", "none");
+                $(".suv").css("display", "none");
+                $(".mpv").removeProp("style");
+            })
+        });
+    </script>
+
+
+</head>
+
+<body id="bodylist">
+
+    <div>
+        <h1>選擇您想要租用的車款</h1>
+    </div>
+
+
+    <div class="container sedan">
+
+        <div class="row">
+
+
+
+
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img id=mypic src="../CSS/pic/camry_trim.jpg"
+                        class="img-responsive img-thumbnail image2 "></a>
+                <div class="overlay2">五人座</div>
+                <!-- <br><br><br><br><br> -->
+                <br>
+                <h4>Camry</h4>
+                <br>
+                <h4>2000/日</h4>
+            </div>
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/altis_trim.jpg"
+                        class="img-responsive  img-thumbnail image2 "></a>
+                <div class="overlay2">五人座</div>
+                <!-- <br><br><br><br><br> -->
+                <br>
+                <h4>Corolla Altis</h4>
+                <br>
+                <h4>1800/日</h4>
+            </div>
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/yaris_trim.jpg"
+                        class="img-responsive  img-thumbnail image2"></a>
+                <div class="overlay2">四人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>Yaris</h4>
+                <br>
+                <h4>1600/日</h4>
+            </div>
+
+        </div> <!-- end of row -->
+
+    </div> <!-- end of container -->
+
+    <div class="container suv">
+
+        <div class="row">
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/rav4_trim.jpg"
+                        class="img-responsive  img-thumbnail image2"></a>
+                <div class="overlay2">五人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>RAV4</h4>
+                <br>
+                <h4>2200/日</h4>
+            </div>
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/cc_trim.jpg"
+                        class="img-responsive  img-thumbnail image2"></a>
+                <div class="overlay2">五人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>Corolla Cross</h4>
+                <br>
+                <h4>1800/日</h4>
+            </div>
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/bz4x_trim.jpg"
+                        class="img-responsive  img-thumbnail image2"></a>
+                <div class="overlay2">五人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>bz4x</h4>
+                <br>
+                <h4>2500/日</h4>
+            </div>
+        </div> <!-- end of row -->
+
+    </div> <!-- end of container -->
+
+
+
+    <div class=" container mpv">
+
+        <div class="row">
+
+            <div class="col-sm-2 "></div>
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/sienna_trim.jpg"
+                        class="img-responsive  img-thumbnail image2"></a>
+                <div class="overlay2">七人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>Sienna</h4>
+                <br>
+                <h4>2800/日</h4>
+            </div>
+
+            <div class="col-sm-4 container2">
+                <a href="./order.html"><img src="../CSS/pic/alphard_trim.jpg"
+                        class="img-responsive img-thumbnail image2"></a>
+                <div class="overlay2">七人座</div>
+                <!-- <br><br><br><br><br> -->
+
+                <br>
+                <h4>Alphard</h4>
+                <br>
+                <h4>3500/日</h4>
+            </div>
+            <div class="col-sm-2"></div>
+
+        </div> <!-- end of row -->
+
+    </div> <!-- end of container -->
+
+
+    <!-- ==================== -->
+    <div id="mySidenav" class="sidenav">
+
+
+        <div class="form-check">
+            <label class="form-check-label" for="all">全部車款</label>
+            <input class="form-check-input" name="type" id="all" type="radio" value="all"><br>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="sedan">Sedan轎車</label>
+            <input class="form-check-input" name="type" id="sedan" type="radio" value="sedan"><br>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="suv">SUV運動休旅車</label>
+            <input class="form-check-input" name="type" id="suv" type="radio" value="suv"><br>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="mpv">MPV多功能車</label>
+            <input class="form-check-input" name="type" id="mpv" type="radio" value="mpv">
+        </div>
+
+
+
+        <a href="javascript:void(0)" class="closebtnside" onclick="closeNavside()">&times;</a>
+    </div>
+
+    
+    <div onclick="openNavside()" id="sidebar">&#9654;點我篩選車款</div>
+
+
+
+
+
+    <div>
+        <a href="./hompage.html"><img id="backpic" src="../CSS/logo.png"></a>
+
+    </div>
+
+
+
+    <div id="menulist" onclick="openNavup()">&#9776;MENU</div>
+    <!-- 下拉式目錄 -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtnup" onclick="closeNavup()">&times;</a>
+        <div class="overlay-content">
+            <a href="../HTML/hompage.html">首頁</a>
+            <a href="../HTML/about.html">關於我們</a>
+            <a href="../HTML/list.html">車款一覽(豐田)</a>
+            <a href="../HTML/order.html">預約專區</a>
+        </div>
+    </div>
+    <script src="../JS/alljs.js"></script>
+
+    <script src="https://unpkg.com/spacingjs" defer></script>
+</body>
+
+</html>
