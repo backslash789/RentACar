@@ -71,7 +71,7 @@ function result() {
 租借時間 : ${diff}天`);
       // alert("自動跳轉至首頁");
     })
-    // document.location.href = "../HTML/homepage.html";
+    // document.location.href = "../HTML/index.html";
   }
   // var myname = document.getElementById('myname').value;
   // alert(myname);

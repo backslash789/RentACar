@@ -91,7 +91,7 @@ img[id=backpic] {
 
 
 
-/* 首頁Homepage */
+/* 首頁Index */
 
 
 #htmlhomepage,
@@ -115,17 +115,17 @@ img[id=backpic] {
 }
 
 .bgimg-1 {
-  background-image: url("../CSS/pic/cc.jpg");
+  background-image: url("./pic/cc.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("../CSS/pic/bz4x.jpg");
+  background-image: url("./pic/bz4x.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("../CSS/pic/alphard.jpg");
+  background-image: url("./pic/alphard.jpg");
   min-height: 400px;
 }
 
@@ -205,7 +205,7 @@ h3 {
 /* About關於我 */
 #bodyabout {
   /* position: relative; */
-  background-image: url(../CSS/pexels-pixabay-248747.jpg);
+  background-image: url(./pexels-pixabay-248747.jpg);
   /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../CSS/pexels-pixabay-248747.jpg); */
   background-size: cover;
   /* 充滿螢幕 */
@@ -244,7 +244,7 @@ h5,
 
 /* 車款一覽List */
 #bodylist {
-  background-image: url(../CSS/pexels-pixabay-63294.jpg);
+  background-image: url(./pexels-pixabay-63294.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -428,7 +428,7 @@ h4 {
 
 /* -預約專區Order- */
 #bodyorder {
-  background-image: url(../CSS/pexels-torsten-dettlaff-70912.jpg);
+  background-image: url(./pexels-torsten-dettlaff-70912.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
